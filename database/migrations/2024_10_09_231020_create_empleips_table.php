@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
 
             $table->string('nombreempleips');
+            $table->string('apellioempleips');
+            $table->string('fotoempleips');            
             $table->bigInteger('identificacionempleips');
             $table->bigInteger('numerocelempleips');
             $table->string('emailempleips');

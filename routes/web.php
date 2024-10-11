@@ -1,32 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EmpleipsController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// // CRUD A EMPLEADO
-// Route::get('/empleadoips/index',[empleadoipsController::class,'index'])->name('empleadoips.index');
+// CRUD A EMPLEADO
+Route::resource('empleips', EmpleipsController::class);
 
 
-// Route::get('/empleadoips/create',[empleadoipsController::class,'create']);
+
+// Route::get('/empleips/index',[empleipsController::class,'index'])->name('empleips.index');
+
+// Route::get('/empleadoips/create',[empleipsController::class,'create']);
 // Route::post('/empleadoips/store',[empleadoipsController::class,'store'])->name('empleadoips.store');
-
 
 // Route::get('/empleadoips/{empleadoips}/edit',[empleadoipsController::class,'edit'])->name('empleadoips.edit');
 // Route::put('/empleadoips/{empleadoips}', [empleadoipsController::class, 'update'])->name('empleadoips.update');
-
 
 // Route::delete('empleadoips/{empleadoips}',[empleadoipsController::class,'destroy'])->name('empleadoips.destroy');

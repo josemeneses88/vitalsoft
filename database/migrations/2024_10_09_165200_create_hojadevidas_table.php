@@ -116,6 +116,9 @@ return new class extends Migration
             $table->unsignedBigInteger('accesorio_id')->nullable();
             $table->foreign('accesorio_id')->references('id')->on('accesorios')->onDelete('cascade');
 
+            $table->unsignedBigInteger('mag_longitud_id')->nullable();
+            $table->foreign('mag_longitud_id')->references('id')->on('mag_longituds')->onDelete('cascade');
+
             $table->unsignedBigInteger('proveedor_id')->nullable();
             $table->foreign('proveedor_id')->references('id')->on('proveedors')->onDelete('cascade');
             

@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('mag_fuen_alimens', function (Blueprint $table) {
             $table->id();
             $table -> string('nombrealimentacion');
-            $table -> string('abreviacionalimentacion');
 
             $table->timestamps();
         });
